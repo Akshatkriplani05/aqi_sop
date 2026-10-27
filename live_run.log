@@ -1,0 +1,136 @@
+2026-10-04 17:17:31 | INFO    | src.common.db | Initialized database schema + views at C:\Users\Akshat Kriplani\OD-McK\Desktop\me\air-quality-analytics\data\processed\aqp.db
+2026-10-04 17:17:31 | INFO    | src.common.db | Upserted 1 rows into pipeline_runs
+2026-10-04 17:17:31 | INFO    | src.pipeline.run | === Pipeline run 20261004T114731Z-c9fc335a (backfill) 2024-06-01 -> 2024-06-07 ===
+2026-10-04 17:17:33 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/locations?coordinates=51.5074%2C-0.1278&radius=25000&limit=100&page=1 -> 200
+2026-10-04 17:17:33 | INFO    | src.ingestion.openaq_client | Found 100 OpenAQ locations near (51.507, -0.128)
+2026-10-04 17:17:34 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/1304749/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:34 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/1304758/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:35 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/211/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:36 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/237/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:37 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/259/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:38 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/217/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:38 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/261/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:39 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/233/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:40 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/253/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:40 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/1298329/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:40 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/228/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:41 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/1304579/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:42 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/230/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:42 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/locations?coordinates=48.8566%2C2.3522&radius=25000&limit=100&page=1 -> 200
+2026-10-04 17:17:42 | INFO    | src.ingestion.openaq_client | Found 58 OpenAQ locations near (48.857, 2.352)
+2026-10-04 17:17:43 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/5581/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:44 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/5582/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:44 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/5620/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:45 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/5588/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:46 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/9542/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:46 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/9539/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:47 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/9538/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:48 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/1582598/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:48 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/locations?coordinates=52.5200%2C13.4050&radius=25000&limit=100&page=1 -> 200
+2026-10-04 17:17:48 | INFO    | src.ingestion.openaq_client | Found 35 OpenAQ locations near (52.520, 13.405)
+2026-10-04 17:17:48 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/11839788/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:49 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6352/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:50 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6353/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:51 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6354/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:51 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/1300115/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:52 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6415/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:52 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6416/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:53 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6418/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:54 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6422/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:54 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/1300119/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:55 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6423/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:55 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6425/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:56 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/1300117/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:57 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/locations?coordinates=40.4168%2C-3.7038&radius=25000&limit=100&page=1 -> 200
+2026-10-04 17:17:57 | INFO    | src.ingestion.openaq_client | Found 78 OpenAQ locations near (40.417, -3.704)
+2026-10-04 17:17:57 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/7498/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:58 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6982/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:59 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/6980/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:17:59 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/7101/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:00 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/7105/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:01 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/7107/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:01 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/25161/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:01 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/7181/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:02 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/7553/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:03 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/7325/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:03 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/7326/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:04 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/7327/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:05 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/7328/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:05 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/locations?coordinates=28.6139%2C77.2090&radius=25000&limit=100&page=1 -> 200
+2026-10-04 17:18:05 | INFO    | src.ingestion.openaq_client | Found 96 OpenAQ locations near (28.614, 77.209)
+2026-10-04 17:18:06 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/13866/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:06 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/24/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:07 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/13864/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:07 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/27/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:07 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/28/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:08 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/29/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:08 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/26/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:08 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/30/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:09 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/33/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:10 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/32/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:10 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/31/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:11 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/34/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:11 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/392/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:12 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/12234782/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:12 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/12234784/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:13 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/36/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:13 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/12234785/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:14 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/394/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:14 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/399/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:15 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/12234786/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:16 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/12234787/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:16 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/35/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:17 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/12234789/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:18 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/393/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:19 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/locations?coordinates=34.0522%2C-118.2437&radius=25000&limit=100&page=1 -> 200
+2026-10-04 17:18:19 | INFO    | src.ingestion.openaq_client | Found 100 OpenAQ locations near (34.052, -118.244)
+2026-10-04 17:18:20 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/1837/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:20 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/1866/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:23 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/2244/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:24 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/15732/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:25 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/15733/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:26 | INFO    | src.ingestion.http_client | GET https://api.openaq.org/v3/sensors/2517/measurements?datetime_from=2024-06-01&datetime_to=2024-06-07&limit=1000&page=1 -> 200
+2026-10-04 17:18:26 | INFO    | src.common.io_utils | Wrote 24 raw rows to C:\Users\Akshat Kriplani\OD-McK\Desktop\me\air-quality-analytics\data\raw\openaq\stations\run=20261004T114731Z-c9fc335a\data.parquet
+2026-10-04 17:18:26 | INFO    | src.common.io_utils | Wrote 2416 raw rows to C:\Users\Akshat Kriplani\OD-McK\Desktop\me\air-quality-analytics\data\raw\openaq\air_measurements\run=20261004T114731Z-c9fc335a\data.parquet
+2026-10-04 17:18:26 | INFO    | src.ingestion.ingest_air | Air ingestion: 24 stations, 2416 measurements
+2026-10-04 17:18:27 | INFO    | src.ingestion.http_client | GET https://archive-api.open-meteo.com/v1/archive?latitude=51.5074&longitude=-0.1278&start_date=2024-06-01&end_date=2024-06-07&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Csurface_pressure%2Cwind_speed_10m%2Cwind_direction_10m&timezone=UTC -> 200
+2026-10-04 17:18:27 | INFO    | src.ingestion.open_meteo_client | Fetched 168 weather rows for (51.507, -0.128)
+2026-10-04 17:18:27 | INFO    | src.ingestion.http_client | GET https://archive-api.open-meteo.com/v1/archive?latitude=48.8566&longitude=2.3522&start_date=2024-06-01&end_date=2024-06-07&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Csurface_pressure%2Cwind_speed_10m%2Cwind_direction_10m&timezone=UTC -> 200
+2026-10-04 17:18:27 | INFO    | src.ingestion.open_meteo_client | Fetched 168 weather rows for (48.857, 2.352)
+2026-10-04 17:18:27 | INFO    | src.ingestion.http_client | GET https://archive-api.open-meteo.com/v1/archive?latitude=52.52&longitude=13.405&start_date=2024-06-01&end_date=2024-06-07&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Csurface_pressure%2Cwind_speed_10m%2Cwind_direction_10m&timezone=UTC -> 200
+2026-10-04 17:18:27 | INFO    | src.ingestion.open_meteo_client | Fetched 168 weather rows for (52.520, 13.405)
+2026-10-04 17:18:27 | INFO    | src.ingestion.http_client | GET https://archive-api.open-meteo.com/v1/archive?latitude=40.4168&longitude=-3.7038&start_date=2024-06-01&end_date=2024-06-07&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Csurface_pressure%2Cwind_speed_10m%2Cwind_direction_10m&timezone=UTC -> 200
+2026-10-04 17:18:27 | INFO    | src.ingestion.open_meteo_client | Fetched 168 weather rows for (40.417, -3.704)
+2026-10-04 17:18:28 | INFO    | src.ingestion.http_client | GET https://archive-api.open-meteo.com/v1/archive?latitude=28.6139&longitude=77.209&start_date=2024-06-01&end_date=2024-06-07&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Csurface_pressure%2Cwind_speed_10m%2Cwind_direction_10m&timezone=UTC -> 200
+2026-10-04 17:18:28 | INFO    | src.ingestion.open_meteo_client | Fetched 168 weather rows for (28.614, 77.209)
+2026-10-04 17:18:28 | INFO    | src.ingestion.http_client | GET https://archive-api.open-meteo.com/v1/archive?latitude=34.0522&longitude=-118.2437&start_date=2024-06-01&end_date=2024-06-07&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Csurface_pressure%2Cwind_speed_10m%2Cwind_direction_10m&timezone=UTC -> 200
+2026-10-04 17:18:28 | INFO    | src.ingestion.open_meteo_client | Fetched 168 weather rows for (34.052, -118.244)
+2026-10-04 17:18:28 | INFO    | src.common.io_utils | Wrote 1008 raw rows to C:\Users\Akshat Kriplani\OD-McK\Desktop\me\air-quality-analytics\data\raw\open_meteo\weather_hourly\run=20261004T114731Z-c9fc335a\data.parquet
+2026-10-04 17:18:28 | INFO    | src.ingestion.ingest_weather | Weather ingestion: 1008 rows across 6 cities
+2026-10-04 17:18:28 | INFO    | src.common.db | Upserted 24 rows into stations
+2026-10-04 17:18:28 | INFO    | src.validation.validator | Validation: 2416 valid, 0 quarantined, issues={'NON_MONOTONIC': 0, 'PERSISTENT_CONSTANT': 290, 'TIME_GAP': 78, 'STALE_DATA': 23}
+2026-10-04 17:18:28 | INFO    | src.transform.clean | Cleaned air measurements: 2416 -> 2416 rows
+2026-10-04 17:18:28 | INFO    | src.common.db | Upserted 2416 rows into air_measurements
+2026-10-04 17:18:28 | INFO    | src.transform.clean | Cleaned weather: 1008 rows
+2026-10-04 17:18:28 | INFO    | src.common.db | Upserted 1008 rows into weather_hourly
+2026-10-04 17:18:29 | INFO    | src.quality.scoring | Computed quality scores for 63 station-days
+2026-10-04 17:18:29 | INFO    | src.common.db | Upserted 441 rows into quality_metrics
+2026-10-04 17:18:29 | INFO    | src.transform.features | Computed 2416 feature rows
+2026-10-04 17:18:29 | INFO    | src.common.db | Upserted 2416 rows into features_hourly
+2026-10-04 17:18:29 | INFO    | src.common.db | Upserted 52 rows into events
+2026-10-04 17:18:29 | INFO    | src.pipeline.run | === Pipeline run 20261004T114731Z-c9fc335a SUCCESS ===
+2026-10-04 17:18:29 | INFO    | src.common.db | Upserted 1 rows into pipeline_runs
+{
+  "pipeline_run_id": "20261004T114731Z-c9fc335a",
+  "mode": "backfill",
+  "start_time": "2026-10-04T11:47:31Z",
+  "end_time": "2026-10-04T11:48:29Z",
+  "date_from": "2024-06-01",
+  "date_to": "2024-06-07",
+  "rows_requested": 0,
+  "rows_received": 2416,
+  "rows_valid": 2416,
+  "rows_quarantined": 0,
+  "quality_score": 80.27,
+  "status": "success"
+}

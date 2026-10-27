@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Data artifacts (reproducible; not source)
+data/raw/
+data/processed/
+data/quarantine/
+*.db
+*.sqlite
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.vscode/

@@ -1,0 +1,26 @@
+# Data Quality Score configuration.
+# NOTE: These weights are a defensible default for hourly environmental data,
+# NOT a scientifically universal standard. They are intentionally configurable.
+rule_version: "1.0.0"
+
+weights:
+  completeness: 0.25
+  validity: 0.20
+  uniqueness: 0.15
+  temporal_consistency: 0.15
+  freshness: 0.10
+  plausibility: 0.15
+
+thresholds:
+  # Station/day DQ score status bands
+  pass_min: 90.0
+  warn_min: 75.0
+  # Freshness: hours after which freshness starts decaying to 0 over `freshness_zero_hours`
+  freshness_full_hours: 6
+  freshness_zero_hours: 72
+  # A run of >= this many identical consecutive values is "stuck sensor"
+  persistent_constant_run: 6
+  # Max allowed gap (hours) before a TIME_GAP is recorded
+  max_gap_hours: 3
+  # expected cadence of observations (hours)
+  expected_cadence_hours: 1

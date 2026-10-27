@@ -1,0 +1,36 @@
+2026-10-04 16:54:07 | INFO    | src.common.db | Initialized database schema + views at C:\Users\Akshat Kriplani\OD-McK\Desktop\me\air-quality-analytics\data\processed\aqp.db
+2026-10-04 16:54:07 | INFO    | src.common.db | Upserted 1 rows into pipeline_runs
+2026-10-04 16:54:07 | INFO    | src.pipeline.run | === Pipeline run 20261004T112407Z-6c599475 (backfill) 2024-01-01T00:00:00Z -> 2024-01-14T23:00:00Z ===
+2026-10-04 16:54:07 | INFO    | src.common.io_utils | Wrote 12 raw rows to C:\Users\Akshat Kriplani\OD-McK\Desktop\me\air-quality-analytics\data\raw\synthetic\stations\run=20261004T112407Z-6c599475\data.parquet
+2026-10-04 16:54:07 | INFO    | src.common.io_utils | Wrote 16176 raw rows to C:\Users\Akshat Kriplani\OD-McK\Desktop\me\air-quality-analytics\data\raw\synthetic\air_measurements\run=20261004T112407Z-6c599475\data.parquet
+2026-10-04 16:54:07 | INFO    | src.common.io_utils | Wrote 2016 raw rows to C:\Users\Akshat Kriplani\OD-McK\Desktop\me\air-quality-analytics\data\raw\synthetic\weather_hourly\run=20261004T112407Z-6c599475\data.parquet
+2026-10-04 16:54:07 | INFO    | scripts.generate_synthetic | Generated SYNTHETIC data: 12 stations, 16176 air rows, 2016 weather rows
+2026-10-04 16:54:07 | INFO    | src.common.db | Upserted 12 rows into stations
+2026-10-04 16:54:07 | INFO    | src.validation.validator | Validation: 15841 valid, 335 quarantined, issues={'MISSING_VALUE': 234, 'DOMAIN_VIOLATION': 54, 'DUPLICATE_RECORD': 47, 'NON_MONOTONIC': 0, 'PERSISTENT_CONSTANT': 376, 'TIME_GAP': 1, 'STALE_DATA': 48}
+2026-10-04 16:54:07 | INFO    | src.common.io_utils | Quarantined 335 rows (validation) -> C:\Users\Akshat Kriplani\OD-McK\Desktop\me\air-quality-analytics\data\quarantine\quarantine_validation_20261004T112407Z-6c599475.parquet
+2026-10-04 16:54:07 | INFO    | src.common.db | Upserted 335 rows into air_quarantine
+2026-10-04 16:54:08 | INFO    | src.transform.clean | Cleaned air measurements: 15841 -> 15841 rows
+2026-10-04 16:54:08 | INFO    | src.common.db | Upserted 15841 rows into air_measurements
+2026-10-04 16:54:08 | INFO    | src.transform.clean | Cleaned weather: 2016 rows
+2026-10-04 16:54:08 | INFO    | src.common.db | Upserted 2016 rows into weather_hourly
+2026-10-04 16:54:12 | INFO    | src.quality.scoring | Computed quality scores for 168 station-days
+2026-10-04 16:54:12 | INFO    | src.common.db | Upserted 1176 rows into quality_metrics
+2026-10-04 16:54:14 | INFO    | src.transform.features | Computed 15841 feature rows
+2026-10-04 16:54:14 | INFO    | src.common.db | Upserted 15841 rows into features_hourly
+2026-10-04 16:54:14 | INFO    | src.common.db | Upserted 114 rows into events
+2026-10-04 16:54:14 | INFO    | src.pipeline.run | === Pipeline run 20261004T112407Z-6c599475 SUCCESS ===
+2026-10-04 16:54:14 | INFO    | src.common.db | Upserted 1 rows into pipeline_runs
+{
+  "pipeline_run_id": "20261004T112407Z-6c599475",
+  "mode": "backfill",
+  "start_time": "2026-10-04T11:24:07Z",
+  "end_time": "2026-10-04T11:24:14Z",
+  "date_from": "2024-01-01T00:00:00Z",
+  "date_to": "2024-01-14T23:00:00Z",
+  "rows_requested": 0,
+  "rows_received": 16176,
+  "rows_valid": 15841,
+  "rows_quarantined": 335,
+  "quality_score": 88.89,
+  "status": "success"
+}
